@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: white;
+    background: linear-gradient(270deg, #000000, #8b0000, #ff0000, #000000);
+    background-size: 800% 800%;
+    animation: gradientMove 10s ease infinite;
+}
+
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    color: red;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-size: large;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: red;
+}
+
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 50px;
+}
+
+.home-text h1 {
+    font-size: 50px;
+}
+
+.home-text h2 {
+    font-size: 45px;
+}
+
+.home-text span {
+    font-size: 45px;
+    color: black;
+    font-weight: bold;
+}
+
+.home-img img {
+    width: 280px;
+    border-radius: 50%;
+    border: 4px solid black;
+    transition: 0.3s;
+}
+
+.home-img img:hover {
+    transform: scale(1.1);
+}
+
+p{
+    font-size: 25px;
+}
+
+.skill {
+    font-weight: bold;
+    color: black;
+}
+
+.card {
+    margin: 30px 50px;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+.socials {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social:hover {
+    transform: scale(1.1);
+}
+
+.fb { background: #1877f2; }
+.ig { background: linear-gradient(45deg,#f09433,#dc2743,#bc1888); }
+.gm { background: #d44638; }
+
+html {
+    scroll-behavior: smooth;
+}
